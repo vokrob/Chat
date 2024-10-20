@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "680415111362",
+    "firebase_url": "https://chat-f7742-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "chat-f7742",
+    "storage_bucket": "chat-f7742.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680415111362:android:7dc3756492dfdebd45b35b",
+        "android_client_info": {
+          "package_name": "com.vokrob.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2VOEZd5s3DJXiyPTUBA9Y6U0e_mthuwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
