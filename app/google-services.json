@@ -13,7 +13,20 @@
           "package_name": "com.vokrob.chat"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "680415111362-gavabkt4ue5tpmekoo3nhdgm1j65rdgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vokrob.chat",
+            "certificate_hash": "6c2759edc05662b322010d0d91e02123ff2d6e41"
+          }
+        },
+        {
+          "client_id": "680415111362-0b8vi2ghgkunn4s2rbf7orl5okhpm7mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC2VOEZd5s3DJXiyPTUBA9Y6U0e_mthuwM"
@@ -21,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680415111362-0b8vi2ghgkunn4s2rbf7orl5okhpm7mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

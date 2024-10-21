@@ -46,9 +46,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
-    implementation(libs.firebase.database)
+    implementation(platform("com.google.firebase:firebase-bom:28.4.0"))
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
     testImplementation(libs.junit)
+    implementation("com.google.firebase:firebase-database-ktx")
+    implementation("com.google.firebase:firebase-auth-ktx:21.0.1")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
