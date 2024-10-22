@@ -51,6 +51,7 @@ dependencies {
     testImplementation(libs.junit)
     implementation("com.google.firebase:firebase-database-ktx")
     implementation("com.google.firebase:firebase-auth-ktx:21.0.1")
+    implementation ("com.squareup.picasso:picasso:2.8")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
