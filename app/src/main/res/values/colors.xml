@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whatsapp_green_dark">#006c60</color>
     <color name="whatsapp_green_light">#00786b</color>
+    <color name="card_view">#C9FACB</color>
 </resources>
