@@ -1,12 +1,15 @@
 package com.vokrob.chat
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -29,6 +32,14 @@ class SignInAct : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = ContextCompat.getColor(this, R.color.whatsapp_green_dark)
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.decorView.systemUiVisibility =
+                window.decorView.systemUiVisibility and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
+        }
 
         auth = Firebase.auth
         launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
@@ -80,6 +91,7 @@ class SignInAct : AppCompatActivity() {
             }
         }
     }
+
     private fun checkAuthState() {
         if (auth.currentUser != null) {
             val i = Intent(this, MainActivity::class.java)
